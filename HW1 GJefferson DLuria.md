@@ -1,5 +1,6 @@
-﻿‘ ‘ ‘ 
-# Import Scientific Packages into Python Kernel
+:thumbsup:
+```
+#Import Scientific Packages into Python Kernel
 from bs4 import BeautifulSoup 
 import requests 
 import re 
@@ -7,39 +8,38 @@ import re
 import pandas as pd
 import numpy as np
 
-# Set a user-agent in your header so you aren't flagged by the browser when making an HTTP request
+#Set a user-agent in your header so you aren't flagged by the browser when making an HTTP request
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) \
            Chrome/39.0.2171.95 Safari/537.36'}
-‘ ‘ ‘ 
+``` 
 
 
-#Step 1
-##Step 1.1:
+:white_square_button: # Step 1
+## Step 1.1:
 If you aren’t in the “right” directory when running jupyter notebook, an error is returned saying you don’t have the correct modules installed.  While uncertain what numpy, panda and beautiful soup do, they apparently were found.  And, the dict variable “headers” is a size 240 and set to {'User-Agent': 'Chrome/39.0.2171.95'}.  It is likely that the headers variable  - user agent is a library that identifies a device and allows you to operate in your respective browser.  There was no output. This didn’t actually load on a Mac, most likely because the “bs4” and “BeautifulSoup” folders or packages do not exist locally or in my cloned spaces. We’re wondering if this is specific to a particular OS or virtual machine setup since it works on a local space setup. 
 
-
-‘ ‘ ‘ 
-# Link url from caselaw which has a repository of Supreme Court ruling opinions and assign to variable
+```
+#Link url from caselaw which has a repository of Supreme Court ruling opinions and assign to variable
 root_url = "http://caselaw.findlaw.com/court/us-supreme-court/years/"
-‘ ‘ ‘ 
+```
 
-##Step 1.2:
+## Step 1.2:
 We do not see the images as indicated in the slide presentation. However, the string variable root-url was created, size = 105, value =  http://caselaw.findlaw.com/court/us-supreme-court/years/.  There was no output.
 
 
-##Step 1.3.1:
+## Step 1.3.1:
 This step creates a list called “years” with an undefined limit to the variable, and its size is 2216.  There was no output.
 
 
-###Step 1.3.2:
+### Step 1.3.2:
 This step likely doe create a truncated name for a function - as it is not a variable, we do not have information regarding it.  And, there is no output for this function.
 
 
-###Step 1.3.3:
+### Step 1.3.3:
 The df DataFrame variable was created of size 374368.  We are completely clueless as to its design.  We are assuming it is building the data set; however, this is the sole output:
 
 
-‘ ‘ ‘
+```
 E:\Programs\Anaconda\lib\site-packages\ipykernel_launcher.py:2: DeprecationWarning: 
 .ix is deprecated. Please use
 .loc for label based indexing or
@@ -49,35 +49,34 @@ See the documentation here:
 http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecated
  
 Out[12]: 'http://caselaw.findlaw.com/us-supreme-court/05-1101.html'
-‘ ‘ ‘ 
+```
 
 
-##Step 1. End
+## Step 1. End
 Successfully produced the array size of (23393, 2). This array shape tells us that we’re set up for 23 thousand court cases. 
 
 
-#Step 2
-##Step 2.1
+:white_square_button: # Step 2
+## Step 2.1
 Even though bs4 and pandas were previously loaded, we reloaded them as per the example. It looks like the supcourt definition is created to limit the number of requests that we make to the caselaw website. Supcourt, test_df, test2_df and test3_df are al DataFrame variables with varying sizes.  There is no output.  
 
 
-##Step 2.2
+## Step 2.2
 We can now see that we’ve been building a database and the mechanisms to view that database. At this point, we understand ***why*** we haven’t received any output or explanations for the code we’re writing. We have hashed explanations in the code that describe the literal effects of the code, but no overall explanation for what we’re creating or should be seeing. 
 
 
-#Step 3:
+:white_square_button: # Step 3:
 We’re not sure if this worked, since no new variables were created and no error messages displayed. Without any direction in these tutorials, we can only assume (as we have for the past 2 steps) that what we’re doing is correct. The add-on Variable inspector was invaluable in helping us determine that we actually were in the process of creating something.
 
-
-#Step 4:
+:white_square_button: # Step 4:
 We don’t see the  printout that is displayed after some of the steps here. But, as in the previous step, we are not getting any error messages. Also, it’s not clear whether we should be seeing the printouts that are interspersed in the tutorial or if those images are for reference. 
 
 
   
 
 -------------
-#TENSORFLOW
-We were able to recreate the tensorflow example.
+:white_square_button: # TENSORFLOW
+### We were able to recreate the tensorflow example.
 
 
 
